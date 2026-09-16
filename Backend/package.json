@@ -1,0 +1,1 @@
+{"name":"royal-garden-cafe","version":"2.0.0","main":"servidor.js","scripts":{"start":"node servidor.js"},"dependencies":{"express":"^5.1.0","mysql2":"^3.14.4"}}

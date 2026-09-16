@@ -1,0 +1,633 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background: #faf7f3;
+
+    color: #3f3d52;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    min-height: 100vh;
+}
+
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.header {
+
+    background: #3f486f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px 0;
+
+    border-bottom: 5px solid #d9ad2b;
+
+}
+
+
+.logo-circle {
+
+    width: 68px;
+
+    height: 68px;
+
+    border: 2px solid #e2b62d;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 18px;
+
+    color: #e2b62d;
+
+    font-size: 24px;
+
+}
+
+
+.header h1 {
+
+    font-size:
+        clamp(27px, 4vw, 46px);
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.subtitulo {
+
+    color: #e5bb36;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* =========================================
+   MENU
+========================================= */
+
+nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 28px;
+
+    padding: 17px 0;
+
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+
+}
+
+
+nav a:hover {
+
+    color: #e7bd39;
+
+}
+
+
+nav a.ativo {
+
+    color: #e7bd39;
+
+}
+
+
+
+/* =========================================
+   PÁGINAS
+========================================= */
+
+.pagina {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 55px 20px 80px;
+
+}
+
+
+.titulo-pagina {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.titulo-pagina h2 {
+
+    color: #3f486f;
+
+    font-size: 35px;
+
+    text-align: center;
+
+}
+
+
+.titulo-pagina span {
+
+    color: #d9ad2b;
+
+    font-size: 28px;
+
+}
+
+
+.descricao-pagina {
+
+    text-align: center;
+
+    color: #777;
+
+    font-family: Arial, sans-serif;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+/* =========================================
+   IMAGEM PRINCIPAL DA HISTÓRIA
+========================================= */
+
+.historia-hero {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    margin-bottom: 70px;
+
+    box-shadow:
+        0 8px 30px
+        rgba(50, 50, 70, 0.16);
+
+}
+
+
+.historia-hero img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.historia-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(25, 30, 55, 0.75),
+            rgba(25, 30, 55, 0.05)
+        );
+
+}
+
+
+.historia-hero-text {
+
+    position: absolute;
+
+    z-index: 2;
+
+    bottom: 45px;
+
+    left: 50px;
+
+    color: white;
+
+}
+
+
+.historia-hero-text h3 {
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.historia-hero-text p {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+
+}
+
+
+
+/* =========================================
+   BLOCOS DA HISTÓRIA
+========================================= */
+
+.historia-conteudo {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 55px;
+
+    margin-bottom: 80px;
+
+}
+
+
+.historia-conteudo.invertido {
+
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+.historia-texto {
+
+    padding: 15px;
+
+}
+
+
+.numero {
+
+    display: inline-block;
+
+    color: #c49a22;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.historia-texto h3 {
+
+    color: #3f486f;
+
+    font-size: 31px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.historia-texto p {
+
+    color: #666;
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.historia-foto {
+
+    width: 100%;
+
+    height: 380px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 7px 25px
+        rgba(50, 50, 70, 0.13);
+
+}
+
+
+.historia-foto img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+
+}
+
+
+.historia-foto:hover img {
+
+    transform: scale(1.04);
+
+}
+
+
+
+/* =========================================
+   FRASE FINAL
+========================================= */
+
+.frase-final {
+
+    max-width: 850px;
+
+    margin: 30px auto 20px;
+
+    padding: 55px 30px;
+
+    background: white;
+
+    border: 1px solid #e6dfd7;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px
+        rgba(50, 50, 70, 0.07);
+
+}
+
+
+.frase-final .flor {
+
+    color: #d9ad2b;
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.frase-final h2 {
+
+    color: #3f486f;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.frase-final p {
+
+    color: #666;
+
+    font-size: 19px;
+
+    font-style: italic;
+
+    line-height: 1.7;
+
+}
+
+
+.linha-dourada {
+
+    width: 90px;
+
+    height: 2px;
+
+    background: #d9ad2b;
+
+    margin: 25px auto;
+
+}
+
+
+.frase-final strong {
+
+    color: #b38a13;
+
+    font-size: 16px;
+
+}
+
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+footer {
+
+    background: #3f486f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 27px;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 750px) {
+
+
+    .header h1 {
+
+        font-size: 25px;
+
+    }
+
+
+    nav {
+
+        gap: 15px;
+
+    }
+
+
+    nav a {
+
+        font-size: 14px;
+
+    }
+
+
+    .pagina {
+
+        padding:
+            40px 15px 60px;
+
+    }
+
+
+    .titulo-pagina h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .historia-hero {
+
+        height: 350px;
+
+    }
+
+
+    .historia-hero-text {
+
+        left: 25px;
+
+        bottom: 30px;
+
+    }
+
+
+    .historia-hero-text h3 {
+
+        font-size: 29px;
+
+    }
+
+
+    .historia-conteudo,
+    .historia-conteudo.invertido {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-bottom: 60px;
+
+    }
+
+
+    .historia-conteudo.invertido
+    .historia-foto {
+
+        order: -1;
+
+    }
+
+
+    .historia-foto {
+
+        height: 300px;
+
+    }
+
+
+    .historia-texto h3 {
+
+        font-size: 27px;
+
+    }
+
+
+}
