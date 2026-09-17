@@ -12,83 +12,231 @@
 
 <body>
 
-<header class="header">
+    <!-- =========================================
+         CABEÇALHO
+    ========================================== -->
 
-    <div class="logo-circle">RG</div>
+    <header class="header">
 
-    <h1>THE ROYAL GARDEN CAFÉ</h1>
+        <div class="logo-circle">
+            RG
+        </div>
 
-    <p class="subtitulo">
-        Uma experiência digna da realeza
-    </p>
+        <h1>
+            THE ROYAL GARDEN CAFÉ
+        </h1>
 
-    <nav>
+        <p class="subtitulo">
+            Uma experiência digna da realeza
+        </p>
 
-        <a href="index.html">Início</a>
+        <nav>
 
-        <a href="cardapio.html" class="ativo">
-            Cardápio
-        </a>
+            <a href="index.html">
+                Início
+            </a>
 
-        <a href="historia.html">
-            Nossa História
-        </a>
+            <a href="cardapio.html" class="ativo">
+                Cardápio
+            </a>
 
-        <a href="contato.html">
-            Contato
-        </a>
+            <a href="historia.html">
+                Nossa História
+            </a>
 
-        <a href="admin.html">
-            Administração
-        </a>
+            <a href="contato.html">
+                Contato
+            </a>
 
-    </nav>
+            <a href="admin.html">
+                Administração
+            </a>
 
-</header>
+        </nav>
 
-
-<main class="pagina">
-
-    <div class="titulo-pagina">
-
-        <span>❦</span>
-
-        <h2>Nosso Cardápio</h2>
-
-        <span>❦</span>
-
-    </div>
+    </header>
 
 
-    <p class="descricao-pagina">
-        Delícias preparadas especialmente para você.
-    </p>
+    <!-- =========================================
+         CARDÁPIO
+    ========================================== -->
+
+    <main class="pagina">
+
+        <div class="titulo-pagina">
+
+            <span>❦</span>
+
+            <h2>
+                Nosso Cardápio
+            </h2>
+
+            <span>❦</span>
+
+        </div>
 
 
-    <input
-        type="search"
-        id="busca"
-        class="busca"
-        placeholder="Buscar no cardápio..."
-    >
+        <p class="descricao-pagina">
+            Delícias preparadas especialmente para você.
+        </p>
 
 
-    <p id="msg" class="mensagem">
-        Carregando cardápio...
-    </p>
+        <!-- =====================================
+             BOTÃO DO PEDIDO
+        ====================================== -->
+
+        <div class="pedido-topo">
+
+            <button
+                id="abrirPedido"
+                class="botao-pedido"
+                type="button">
+
+                🛍️ Meu pedido
+
+                <span id="contadorPedido">
+                    0
+                </span>
+
+            </button>
+
+        </div>
 
 
-    <div id="produtos" class="produtos"></div>
+        <!-- =====================================
+             BUSCA
+        ====================================== -->
 
-</main>
+        <input
+            type="search"
+            id="busca"
+            class="busca"
+            placeholder="Buscar no cardápio..."
+        >
 
 
-<footer>
-    © 2026 The Royal Garden Café
-</footer>
+        <!-- =====================================
+             MENSAGEM
+        ====================================== -->
+
+        <p
+            id="msg"
+            class="mensagem">
+
+            Carregando cardápio...
+
+        </p>
 
 
-<script src="script.js"></script>
+        <!-- =====================================
+             PRODUTOS
+        ====================================== -->
+
+        <div
+            id="produtos"
+            class="produtos">
+        </div>
+
+
+    </main>
+
+
+    <!-- =========================================
+         PAINEL DO PEDIDO
+    ========================================== -->
+
+    <section
+        id="areaPedido"
+        class="area-pedido">
+
+
+        <div class="pedido-cabecalho">
+
+            <h2>
+                ❦ Meu pedido
+            </h2>
+
+
+            <button
+                id="fecharPedido"
+                class="fechar-pedido"
+                type="button">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <!-- ITENS -->
+
+        <div
+            id="itensPedido"
+            class="itens-pedido">
+
+        </div>
+
+
+        <!-- TOTAL -->
+
+        <div class="pedido-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="totalPedido">
+                R$ 0,00
+            </strong>
+
+        </div>
+
+
+        <!-- AÇÕES -->
+
+        <div class="pedido-acoes">
+
+            <button
+                id="limparPedido"
+                class="botao-limpar"
+                type="button">
+
+                Limpar pedido
+
+            </button>
+
+
+            <button
+                id="finalizarPedido"
+                class="botao-finalizar"
+                type="button">
+
+                Finalizar pedido
+
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- =========================================
+         RODAPÉ
+    ========================================== -->
+
+    <footer>
+
+        © 2026 The Royal Garden Café
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
